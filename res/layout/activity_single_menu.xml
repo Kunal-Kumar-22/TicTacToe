@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:text="Normal Mode" />
+
+    <Button
+        android:id="@+id/hard"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/normal"
+        android:layout_below="@+id/normal"
+        android:layout_marginTop="33dp"
+        android:text="Hard Mode" />
+
+</RelativeLayout>

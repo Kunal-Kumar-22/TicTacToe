@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignBaseline="@+id/two"
+        android:layout_alignBottom="@+id/two"
+        android:layout_toStartOf="@+id/two"
+        android:text="" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignBottom="@+id/two"
+        android:layout_toEndOf="@+id/two"
+        android:text="" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignStart="@+id/one"
+        android:layout_below="@+id/two"
+        android:text="" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignStart="@+id/two"
+        android:layout_below="@+id/two"
+        android:text="" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignBaseline="@+id/five"
+        android:layout_alignBottom="@+id/five"
+        android:layout_alignStart="@+id/three"
+        android:text="" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignStart="@+id/four"
+        android:layout_below="@+id/four"
+        android:text="" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignBaseline="@+id/seven"
+        android:layout_alignBottom="@+id/seven"
+        android:layout_toEndOf="@+id/seven"
+        android:text="" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/five"
+        android:layout_toEndOf="@+id/five"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seven"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/click_button_to_start_"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
